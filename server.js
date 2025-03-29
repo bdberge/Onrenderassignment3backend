@@ -17,10 +17,12 @@ app.get("/unicorns", (req, res) => {
   try {
     let results = [...unicorns];
 
-    // Handle name search
+    // Handle name search 
     if (req.query.name) {
-      const namePattern = new RegExp(req.query.name, "i");
-      results = results.filter(unicorn => namePattern.test(unicorn.name));
+      const nameQuery = req.query.name.toLowerCase();
+      results = results.filter(unicorn =>
+        unicorn.name.toLowerCase().includes(nameQuery)
+      );
     }
 
     // Handle loves search
