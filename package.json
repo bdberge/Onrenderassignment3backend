@@ -1,0 +1,37 @@
+{
+  "name": "assignment-3-unicorns-api-how-do-i-center-a-div",
+  "version": "1.0.0",
+  "description": "Yay! This is the final assignment for this course!",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp1537-w25/assignment-3-unicorns-api-how-do-i-center-a-div.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/comp1537-w25/assignment-3-unicorns-api-how-do-i-center-a-div/issues"
+  },
+  "homepage": "https://github.com/comp1537-w25/assignment-3-unicorns-api-how-do-i-center-a-div#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cookie": "^0.7.1",
+    "cookie-signature": "^1.0.6",
+    "cors": "^2.8.5",
+    "debug": "^2.6.9",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.3"
+  }
+}
