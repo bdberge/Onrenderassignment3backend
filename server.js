@@ -4,7 +4,7 @@ const cors = require("cors");
 const unicorns = require("./data");
 
 const app = express();
-const PORT = 3000;
+
 
 // Middleware
 app.use(cors());
@@ -70,6 +70,7 @@ app.get("/unicorns", (req, res) => {
   }
 });
 
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
