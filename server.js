@@ -16,14 +16,15 @@ app.use(express.static('../Frontend'));
 app.get("/unicorns", (req, res) => {
   try {
     let results = [...unicorns];
-
-    // Handle name search 
+    // single search name
     if (req.query.name) {
       const nameQuery = req.query.name.toLowerCase();
       results = results.filter(unicorn =>
-        unicorn.name.toLowerCase().includes(nameQuery)
+        unicorn.name && unicorn.name.toLowerCase().includes(nameQuery)
       );
     }
+    console.log("Searching for name:", req.query.name);
+    
 
     // Handle loves search
     if (req.query.loves) {
