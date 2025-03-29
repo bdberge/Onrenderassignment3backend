@@ -2,7 +2,7 @@
   "name": "assignment-3-unicorns-api-how-do-i-center-a-div",
   "version": "1.0.0",
   "description": "Yay! This is the final assignment for this course!",
-  "main": "lab9-unicrons-queries.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
